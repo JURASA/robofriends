@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
 // import { robots } from './robots';
-import Scroll from './Scroll';
+import Scroll from '../components/Scroll';
 
 // We don't need to write React.Component because of destructuring. 
 // Javascript knows Component is from React because we wrote {Component}
