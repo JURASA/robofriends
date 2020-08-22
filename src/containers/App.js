@@ -3,6 +3,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 // import { robots } from './robots';
 import Scroll from '../components/Scroll';
+import ErrorBoundary from '../errorBoundary';
 
 // We don't need to write React.Component because of destructuring. 
 // Javascript knows Component is from React because we wrote {Component}
@@ -63,7 +64,9 @@ class App extends Component {
                         we have a way to filter robots in app.js, we want to pass
                         down to the child node, CardList only what the use has 
                         typed down. */}
-                        <CardList robots = {filteredRobots}/>   
+                        <ErrorBoundary>
+                          <CardList robots = {filteredRobots}/>  
+                        </ErrorBoundary> 
                     </Scroll>
                 </div>
                 
