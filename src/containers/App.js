@@ -4,6 +4,7 @@ import SearchBox from '../components/SearchBox';
 // import { robots } from './robots';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from '../errorBoundary';
+import 'App.css';
 
 // We don't need to write React.Component because of destructuring. 
 // Javascript knows Component is from React because we wrote {Component}
