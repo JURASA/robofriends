@@ -21,7 +21,16 @@ class App extends Component {
             searchfield: ''
         }
     }
-
+    
+    // We use a fetch api which allows us to do an AJAX call after the 
+    // "component mounted" (basically once after our robofriends app was
+    // loaded). After the "component mounted" we made an AJAX request 
+    // using the fetch API which returned a promise. "then" (by answering
+    // the promise we got with a .then) we then take the response
+    // from that promise converted the response into something which
+    // can be used in javascript. Now we can update the state of the 
+    // app by using this data to "then" (finally) set the robots to
+    // the data we retrieved from the api.
     componentDidMount(){
         // fyi fetch is a window method
         fetch('https://jsonplaceholder.typicode.com/users')
